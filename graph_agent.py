@@ -22,11 +22,6 @@ EMBED = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
 LLM   = ChatGoogleGenerativeAI(model="gemini-1.5-pro-latest", temperature=0)
 
 # ── Vector DB ---------------------------------------------
-if not os.path.exists("faiss_index"):
-    print("インデックスが見つからないため、新規に作成します...")
-    build_index()
-    print("インデックスの作成が完了しました。")
-
 VECDB: FAISS = FAISS.load_local(
     "faiss_index",
     EMBED,
