@@ -1,0 +1,15 @@
+# --- LangChain & VectorStore ---
+langchain==0.3.25
+langchain-community==0.3.25
+faiss-cpu
+langchain-text-splitters
+langgraph  # これを追加！
+
+# --- Gemini 連携 ---
+langchain-google-genai>=2.0.0
+google-generativeai
+
+# --- その他 共通 ---
+tiktoken
+pypdf
+python-dotenv
