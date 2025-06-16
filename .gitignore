@@ -1,22 +1,23 @@
 # --- 仮想環境 ---
-# Pythonのライブラリが大量に入っており、共有する必要がないため無視する
 .venv/
 
 # --- Pythonキャッシュファイル ---
-# 実行時に自動生成される一時ファイル
 __pycache__/
 *.pyc
 
 # --- 秘密情報 ---
-# APIキーなどの秘密の情報をGitにアップロードしないようにする
 .env
 
 # --- エディタの設定ファイル ---
-# 個人の開発環境に依存する設定ファイル
 .vscode/
 .idea/
 
 # --- OS固有のファイル ---
-# MacやWindowsが自動で生成する隠しファイル
 .DS_Store
 Thumbs.db
+
+# --- 評価ログ・実行ログ・一時ファイル ---
+eval_results.csv
+user_questions_log.csv
+frequent_questions.csv
+faiss_index/
